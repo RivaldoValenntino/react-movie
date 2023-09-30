@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: -75px;
+    margin-top: -30px;
    
 }
 .movie-image::after{
@@ -17,4 +17,7 @@
 }
 section{
     z-index: 900;
+}
+::-webkit-scrollbar {
+    display: none;
 }

@@ -18,6 +18,15 @@ export const TrendingMovies = () => {
     },
   });
 };
+export const fetchMoviesByGenres = async (genreId) => {
+  return axios.get(`${BaseUrl}/discover/movie`, {
+    params: {
+      api_key: apiKey,
+      with_genres: genreId.join(','), // Menggabungkan genreIds dengan koma
+      sort_by: 'popularity.desc', // Anda juga bisa menambahkan parameter 'sort_by' sesuai kebutuhan
+    },
+  });
+};
 export const DetailTrendingMovies = (id,callback) => {
     axios
       .get(`${BaseUrl}/movie/popular/${id}`, {
