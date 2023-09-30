@@ -1,0 +1,18 @@
+.links:hover::after{
+    display: block;
+    content: '';
+    border-bottom: 2px solid #f5f5f5;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -5px;
+}
+
+.links{
+    opacity: .7;
+    transition: .3s;
+}
+
+.links:not(:hover){
+    opacity: 1;
+}
