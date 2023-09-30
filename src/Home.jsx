@@ -1,6 +1,6 @@
 import Navbar from './components/navbar'
 import Trending from './components/trending'
-import Upcoming from './components/tvseries'
+import Series from './components/tvseries'
 import TopRated from './components/toprated'
 import Landing from './components/landingPage'
 import Footer from './components/footer'
@@ -41,7 +41,7 @@ const Home = () => {
         <Landing/>
         <Trending/>
         <TopRated/>
-        <Upcoming/>
+          <Series />
         <Footer/>
         </div>
         <div>

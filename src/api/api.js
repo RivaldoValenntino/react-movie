@@ -27,20 +27,7 @@ export const fetchMoviesByGenres = async (genreId) => {
     },
   });
 };
-export const DetailTrendingMovies = (id,callback) => {
-    axios
-      .get(`${BaseUrl}/movie/popular/${id}`, {
-        params: {
-          api_key: apiKey,
-        },
-      })
-      .then((response) => {
-        callback(response.data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-  };
+
 export const fetchUpcomingMovies = () => {
   return axios.get(`${BaseUrl}/tv/top_rated`, {
     params: {

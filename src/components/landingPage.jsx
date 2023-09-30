@@ -143,7 +143,7 @@ const Landing = () => {
               </div>
               <div className="flex flex-col gap-4 mt-10 text-center justify-around lg:flex-row lg:justify-start">
                 <button className="btn bg-rose-500 px-10 md:px-2 py-5 text-white rounded-full text-xl lg:w-60 w-full">Watch Now </button>
-                <button className="btn px-10 md:px-2 py-5 text-white rounded-full text-xl border lg:w-60 w-full" style={{ textShadow: '5px 5px 3px #000000' }}>Play Trailer </button>
+                <button className="btn px-10 md:px-2 py-5 text-white rounded-full text-xl border lg:w-60 w-full hover:bg-" style={{ textShadow: '5px 5px 3px #000000' }}>Play Trailer </button>
               </div>
             </div>
           </section>

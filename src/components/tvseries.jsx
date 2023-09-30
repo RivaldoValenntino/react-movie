@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { fetchUpcomingMovies } from '../api/api';
-const Upcoming = () => {
+const Series = () => {
     
     const [tvSeries, setTvSeries] = useState([]);
   
@@ -17,7 +17,7 @@ const Upcoming = () => {
     return (
         <>
         <div className="container">
-          <h1 className="text-2xl text-white ml-10 mt-20 mb-10" id='tvseries'>Tv Series</h1> 
+          <h1 className="text-2xl text-white ml-10 mt-20 mb-10 font-semibold" id='tvseries'>Top Rated Tv Series</h1> 
           <section className="trending-section grid grid-cols-2 md:grid-cols-4 gap-5 px-10">
             {tvSeries.map((movie) => (
              <div className="card relative overflow-hidden rounded-lg shadow-lg bg-opacity-50 backdrop-blur-md transition duration-300 hover:scale-105 z-50" key={movie.id}>
@@ -38,4 +38,4 @@ const Upcoming = () => {
         </>
     )
 }
-export default Upcoming
+export default Series

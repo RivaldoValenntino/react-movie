@@ -20,7 +20,7 @@ const Trending = () => {
     return (
         <>
       <div className="container">
-          <h1 className="text-2xl text-white ml-10 mt-20 mb-10"id='trending'>Trending Movies</h1> 
+          <h1 className="text-2xl text-white ml-10 mt-20 mb-10 font-semibold" id='trending'>Trending Movies</h1> 
           <section className="trending-section grid grid-cols-2 md:grid-cols-4 gap-5 px-10">
             {movies.map((movie) => (
              
