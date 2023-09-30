@@ -8,7 +8,6 @@ const Upcoming = () => {
     useEffect(() => {
       fetchUpcomingMovies()
         .then((response) => {
-          console.log(response.data.results);
           setTvSeries(response.data.results);
         })
         .catch((error) => {

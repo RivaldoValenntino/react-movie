@@ -8,7 +8,6 @@ const Landing = () => {
     if(q.length > 3){  
       const query = await searchMovies(q)
       setSearchMovies(query.results)
-      console.log({query: query})
     }else{
       setSearchMovies([])
     }
