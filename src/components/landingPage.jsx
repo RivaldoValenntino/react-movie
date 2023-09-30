@@ -18,7 +18,7 @@ const Landing = () => {
         <>
         <div className="movie-image flex items-center w-full mb-10 z-[999]">
           <section>
-            <div className="container px-4 md:px-10">
+            <div className="container lg:px-20 px-10">
               <h1 className="font-bold text-2xl md:text-4xl mb-2 shadow-black" style={{ fontFamily: 'Poppins', color: '#f5f5f5', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>Blue Beetle (2023)</h1>
               <div className="content">
                 <p className="mb-4 lg:w-1/2 shadow-black" style={{ fontFamily: 'Poppins', color: '#f5f5f5', textShadow: '5px 5px 3px #000000' }}>
