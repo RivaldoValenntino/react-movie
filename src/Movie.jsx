@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/navbar"
-import './styles/searchPage.css'
+import './styles/home.css'
 import { searchMovies } from "./api/api";
 import Footer from "./components/footer";
 
