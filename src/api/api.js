@@ -11,10 +11,19 @@ export const fetchTopRatedMovies = () => {
     },
   });
 };
-export const TrendingMovies = () => {
-  return axios.get(`${BaseUrl}/discover/movie?/sort_by=popularity.desc&`, {
+export const AllMoviesAPI = (page) => {
+  return axios.get(`${BaseUrl}/discover/movie`, {
     params: {
       api_key: apiKey,
+      page: page,
+    },
+  });
+};
+export const TrendingMovies = (page) => {
+  return axios.get(`${BaseUrl}/discover/movie?sort_by=popularity.desc`, {
+    params: {
+      api_key: apiKey,
+      page: page,
     },
   });
 };
@@ -28,10 +37,11 @@ export const fetchMoviesByGenres = async (genreId) => {
   });
 };
 
-export const fetchUpcomingMovies = () => {
+export const fetchTvMovies = (page) => {
   return axios.get(`${BaseUrl}/tv/top_rated`, {
     params: {
       api_key: apiKey,
+      page: page,
     },
   });
 };
@@ -39,5 +49,9 @@ export const fetchUpcomingMovies = () => {
 
 export const searchMovies = async (q) => {
   const search = await axios.get (`${BaseUrl}/search/movie?query=${q}&api_key=${apiKey}`);
+  return search.data;
+}
+export const searchTv = async (q) => {
+  const search = await axios.get(`${BaseUrl}/search/tv?query=${q}&api_key=${apiKey}`);
   return search.data;
 }

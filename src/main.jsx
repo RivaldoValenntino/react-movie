@@ -3,18 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './Home.jsx'
-import SearchPage from './Search.jsx'
+import MoviePage from './Movie.jsx';
+import TvSeriesPage from './Series';
+import MovieListPage from './Film';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <SearchPage />
+    element: <MoviePage />
+  },
+  {
+    path: '/all-movies',
+    element: <Home/>
+  },
+  {
+    path: '/list-tv',
+    element: <TvSeriesPage />
   },
   {
     path: '/list-movies',
-    element: <Home/>
-  },
+    element: <MovieListPage />
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -4,16 +4,16 @@ import './styles/searchPage.css'
 import { searchMovies } from "./api/api";
 import Footer from "./components/footer";
 
-const SearchPage = () => {
-    const [moviesSearch, setSearchMovies] = useState([]);
-    const search = async (q) => {
-        if (q.length > 3) {
-            const query = await searchMovies(q)
-            setSearchMovies(query.results)
-        } else {
-            setSearchMovies([])
-        }
-    }
+const MoviePage = () => {
+    // const [moviesSearch, setSearchMovies] = useState([]);
+    // const search = async (q) => {
+    //     if (q.length > 3) {
+    //         const query = await searchMovies(q)
+    //         setSearchMovies(query.results)
+    //     } else {
+    //         setSearchMovies([])
+    //     }
+    // }
     return (
         <>
             <Navbar title="MovieApp" />
@@ -21,11 +21,11 @@ const SearchPage = () => {
                 <section className="mt-5">
                     <div className="pt-10">
                         <h1 className="text-white lg:text-5xl text-center text-3xl font-bold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>Welcome to MovieMania</h1>
-                    <p className="text-white text-center lg:text-4xl text-xl font-semibold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>Discover every Movie and TV Show</p>
-                    <p className="text-white text-center lg:text-4xl font-semibold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>From Trending and Popular</p>
+                        <p className="text-white text-center lg:text-4xl text-xl font-semibold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>Discover every Movie and TV Show</p>
+                        <p className="text-white text-center lg:text-4xl font-semibold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>From Trending and Popular</p>
                     </div>
                 </section>
-                <section className="w-3/4 lg:w-full md:w-full mt-10">
+                {/* <section className="w-3/4 lg:w-full md:w-full mt-10">
                     <div className="mb-5">
                         <div className="relative mb-4 pt-10 flex w-full justify-center items-center">
                             <span
@@ -92,7 +92,7 @@ const SearchPage = () => {
                             </div>
                         ))}
                     </section>
-                </div>
+                </div> */}
 
             </div>
             <Footer />
@@ -101,4 +101,4 @@ const SearchPage = () => {
 }
 
 
-export default SearchPage
+export default MoviePage

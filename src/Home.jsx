@@ -40,8 +40,7 @@ const Home = () => {
         <Navbar title="MovieApp"/>
         <Landing/>
         <Trending/>
-        <TopRated/>
-          <Series />
+          <TopRated />
         <Footer/>
         </div>
         <div>

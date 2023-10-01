@@ -110,6 +110,10 @@ const Landing = () => {
     {
       "id": 37,
       "name": "Western"
+    },
+    {
+      "id": 10770,
+      "name": "TV Movie"
     }
   ]
 
