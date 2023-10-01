@@ -18,12 +18,12 @@ const SearchPage = () => {
         <>
             <Navbar title="MovieApp" />
             <div className="search-page w-full flex flex-col justify-center items-center z-[999]">
-                <section>
+                <section className="mt-20">
                     <h1 className="text-white lg:text-5xl text-center text-3xl font-bold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>Welcome to MovieMania</h1>
                     <p className="text-white text-center lg:text-4xl text-xl font-semibold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>Discover every Movie and TV Show</p>
                     <p className="text-white text-center lg:text-4xl font-semibold" style={{ fontFamily: 'Poppins', textShadow: '2px 2px 3px #000000', letterSpacing: '2px' }}>From Trending and Popular</p>
                 </section>
-                <section className="w-3/4 lg:w-full md:w-full">
+                <section className="w-3/4 lg:w-full md:w-full mt-20">
                     <div className="mb-5">
                         <div className="relative mb-4 pt-10 flex w-full justify-center items-center">
                             <span
