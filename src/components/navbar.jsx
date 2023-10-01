@@ -58,22 +58,24 @@ const Navbar = (props) => {
         </div>
         <div className="hidden md:flex space-x-4 justify-center" style={{ fontFamily: 'Poppins' }}>
           <Link to={'/'}>
-            <button className="text-white links hover:text-gray-300 focus:outline-none">Home</button>
+            <button className="text-white links hover:text-gray-300 focus:outline-none">
+              <i className="bi bi-house-door text-md mr-2"></i>Home
+            </button>
           </Link>
-          <Link to={'/list-movies'} className="text-white link">All Movies</Link>
-          {/* <a href="#trending" className="text-white links">Trending</a>
-          <a href="#toprated" className="text-white links">Top Rated</a>
-          <a href="#tvseries" className="text-white links">Tv Series</a> */}
+          <Link to={'/list-movies'} className="text-white links">
+            <i className="bi bi-film text-md mr-2"></i>All Movies
+          </Link>
         </div>
       </div>
       {/* Hamburger Menu */}
       {isOpen && (
         <div className="md:hidden mt-2 bg-transparent" style={{ fontFamily: 'Poppins' }}>
-          <Link to={'/'} className="block text-white py-2">Home</Link>
-          <Link to={'/list-movies'} className="block text-white py-2">All Movies</Link>
-          {/* <a href="#trending" className="block text-white py-2">Trending</a>
-          <a href="#toprated" className="block text-white py-2">Top Rated</a>
-          <a href="#tvseries" className="block text-white py-2">Tv Series</a> */}
+          <Link to={'/'} className="block text-white py-2">
+            <i className="bi bi-house-door text-md mr-2"></i>Home
+          </Link>
+          <Link to={'/list-movies'} className="block text-white py-2">
+            <i className="bi bi-film text-sm mr-2"></i>All Movies
+          </Link>
         </div>
       )}
     </nav>
