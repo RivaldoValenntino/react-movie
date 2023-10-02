@@ -3,7 +3,8 @@ import { searchTv } from "./api/api";
 import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 import Series from "./components/tvseries"
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const TvSeriesPage = () => {
     const [tvSearch, setSearchtv] = useState([]);
     const search = async (q) => {
@@ -62,10 +63,11 @@ const TvSeriesPage = () => {
                                     className="card relative overflow-hidden rounded-lg shadow-lg bg-opacity-50 backdrop-blur-md transition duration-300 hover:scale-105 z-50"
                                     key={movie.id}
                                 >
-                                    <img
+                                    <LazyLoadImage
                                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                         alt={movie.name}
                                         className="w-full h-full object-cover"
+                                        effect="blur"
                                     />
                                     <div className="card-desc absolute inset-0 flex flex-col justify-center items-center text-gray opacity-0 hover:opacity-100 transition-opacity duration-300 backdrop-blur-lg p-4">
                                         <h3 className="text-slate-50 lg:text-xl md:text-sm text-center font-bold text-shadow-md" style={{ textShadow: '1px 1px 3px #000000' }}>

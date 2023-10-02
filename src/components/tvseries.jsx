@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { fetchTvMovies } from '../api/api';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Series = () => {
   const [tvSeries, setTvSeries] = useState([]);
@@ -37,10 +39,11 @@ const Series = () => {
               className="card relative overflow-hidden rounded-lg shadow-lg bg-opacity-50 backdrop-blur-md transition duration-300 hover:scale-105 z-50"
               key={tv.id}
             >
-              <img
+              <LazyLoadImage
                 src={`https://image.tmdb.org/t/p/w500${tv.poster_path}`}
                 alt={tv.title}
                 className="w-full h-full object-cover"
+                effect='blur'
               />
               <div className="card-desc absolute inset-0 flex flex-col justify-center items-center text-gray opacity-0 hover:opacity-100 transition-opacity duration-300 backdrop-blur-lg p-4">
                 <h3

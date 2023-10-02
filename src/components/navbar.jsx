@@ -89,7 +89,7 @@ const Navbar = (props) => {
             <i className="bi bi-tv text-sm mr-2"></i>Tv Series
           </Link>
           <Link to={'/list-movies'} className="block text-white py-2">
-            <i className="bi bi-tv text-sm mr-2"></i>Movies
+            <i className="bi bi-camera-reels text-sm mr-2"></i>Movies
           </Link>
         </div>
       )}
