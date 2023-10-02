@@ -79,7 +79,7 @@ const MovieListPage = () => {
                                 <p className="text-slate-50 text-sm text-center font-semibold text-shadow-md block md:hidden" style={{ textShadow: '1px 1px 3px #000000' }}>
                                     {movie.overview}
                                 </p>
-                                <span className="text-xl text-white mt-2 font-bold" style={{ textShadow: '3px 3px 5px #000000' }}>
+                                <span className="text-xl text-white mt-2 font-bold" style={{ textShadow: '1px 1px 3px #000000' }}>
                                     <i className="bi bi-star-fill text-xl text-yellow-500"></i> {movie.vote_average.toFixed(1)}
                                 </span>
                                 <p className="text-white text-center text-md font-semibold" style={{ textShadow: '3px 3px 3px #000000' }}>
