@@ -25,8 +25,12 @@
     }
 
     25% {
+        background-image: url('../assets/images/john_wick2.png');
+        
+        }
+        
+        50% {
         background-image: url('../assets/images/flash3.jpg');
-
     }
 
     75% {

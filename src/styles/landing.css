@@ -18,6 +18,3 @@
 section{
     z-index: 900;
 }
-::-webkit-scrollbar {
-    display: none;
-}
