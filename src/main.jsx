@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './Home.jsx'
-import MoviePage from './Movie.jsx';
 import TvSeriesPage from './Series';
 import MovieListPage from './Film';
+import Intro from './Intro';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MoviePage />
+    element: <Intro />
   },
   {
     path: '/all-movies',

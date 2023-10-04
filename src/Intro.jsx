@@ -1,10 +1,8 @@
-import { useState } from "react";
 import Navbar from "./components/navbar"
 import './styles/home.css'
-import { searchMovies } from "./api/api";
 import Footer from "./components/footer";
 
-const MoviePage = () => {
+const Intro = () => {
     return (
         <>
             <Navbar title="MovieApp" />
@@ -24,4 +22,4 @@ const MoviePage = () => {
 }
 
 
-export default MoviePage
+export default Intro
