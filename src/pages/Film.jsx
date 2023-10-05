@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { searchMovies } from "./api/api";
-import Footer from "./components/footer"
-import Navbar from "./components/navbar"
-import AllMovies from "./components/allMovies";
+import { searchMovies } from "../api/api";
+import Footer from "../components/footer"
+import Navbar from "../components/navbar"
+import AllMovies from "../components/cards/allMovies";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 const MovieListPage = () => {

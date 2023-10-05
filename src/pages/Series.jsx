@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { searchTv } from "./api/api";
-import Footer from "./components/footer"
-import Navbar from "./components/navbar"
-import Series from "./components/tvseries"
+import { searchTv } from "../api/api";
+import Footer from "../components/footer"
+import Navbar from "../components/navbar"
+import Series from "../components/cards/tvseries"
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 const TvSeriesPage = () => {

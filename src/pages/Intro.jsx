@@ -1,6 +1,6 @@
-import Navbar from "./components/navbar"
-import './styles/home.css'
-import Footer from "./components/footer";
+import Navbar from "../components/navbar"
+import '../styles/home.css'
+import Footer from "../components/footer";
 
 const Intro = () => {
     return (

@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home.jsx';
-import TvSeriesPage from './Series';
-import MovieListPage from './Film';
-import Intro from './Intro';
+import Intro from './pages/Intro';
+import Home from './pages/Home';
+import TvSeriesPage from './pages/Series';
+import MovieListPage from './pages/Film';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

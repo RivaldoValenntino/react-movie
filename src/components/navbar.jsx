@@ -38,7 +38,8 @@ const Navbar = (props) => {
   const isAllPages = window.location.pathname === '/all-movies';
 
   return (
-    <nav className={navbarClass}>
+    <header>
+      <nav className={navbarClass}>
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold" style={{ fontFamily: 'Poppins' }}>
           {props.title}
@@ -94,6 +95,7 @@ const Navbar = (props) => {
         </div>
       )}
     </nav>
+    </header>
   );
 };
 
