@@ -66,10 +66,10 @@ const MovieListPage = () => {
                             <LazyLoadImage
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                 alt={movie.title}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover hover:brightness-50"
                                 effect="blur"
                             />
-                            <div className="card-desc absolute inset-0 flex flex-col justify-center items-center text-gray opacity-0 hover:opacity-100 transition-opacity duration-300 backdrop-blur-lg p-4">
+                            <div className="card-desc absolute inset-0 flex flex-col justify-center items-center text-gray opacity-0 hover:opacity-100 transition-opacity duration-300 p-4 bg-black bg-opacity-75">
                                 <h3 className="text-slate-50 lg:text-xl md:text-sm text-center font-bold text-shadow-md" style={{ textShadow: '1px 1px 3px #000000' }}>
                                     {movie.title}
                                 </h3>

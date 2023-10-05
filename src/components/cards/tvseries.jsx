@@ -45,7 +45,7 @@ const Series = () => {
                 className="w-full h-full object-cover"
                 effect='blur'
               />
-              <div className="card-desc absolute inset-0 flex flex-col justify-center items-center text-gray opacity-0 hover:opacity-100 transition-opacity duration-300 backdrop-blur-lg p-4">
+              <div className="card-desc absolute inset-0 flex flex-col justify-center items-center text-gray opacity-0 hover:opacity-100 transition-opacity duration-300 p-4 bg-black bg-opacity-75">
                 <h3
                   className="text-slate-50 lg:text-xl md:text-sm text-center font-bold text-shadow-md"
                   style={{ textShadow: '3px 3px 5px #000000' }}
@@ -62,7 +62,7 @@ const Series = () => {
                   className="text-slate-50 text-sm text-center font-semibold text-shadow-md block md:hidden"
                   style={{ textShadow: '3px 3px 5px #000000' }}
                 >
-                  {tv.overview.length > 120 ? `${tv.overview.slice(0, 120)}...` : tv.overview}
+                  {tv.overview.length > 60 ? `${tv.overview.slice(0, 60)}...` : tv.overview}
                 </p>
                 <span className="text-xl text-white mt-2 font-bold" style={{ textShadow: '1px 1px 3px #000000' }}>
                   <i className="bi bi-star-fill text-xl text-yellow-500"></i> {tv.vote_average}

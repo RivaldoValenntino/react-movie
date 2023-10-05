@@ -19,11 +19,10 @@ export const AllMoviesAPI = (page) => {
     },
   });
 };
-export const TrendingMovies = (page) => {
+export const TrendingMovies = () => {
   return axios.get(`${BaseUrl}/discover/movie?sort_by=popularity.desc`, {
     params: {
       api_key: apiKey,
-      page: page,
     },
   });
 };
