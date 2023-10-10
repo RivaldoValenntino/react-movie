@@ -30,8 +30,8 @@ export const fetchMoviesByGenres = async (genreId) => {
   return axios.get(`${BaseUrl}/discover/movie`, {
     params: {
       api_key: apiKey,
-      with_genres: genreId.join(','), // Menggabungkan genreIds dengan koma
-      sort_by: 'popularity.desc', // Anda juga bisa menambahkan parameter 'sort_by' sesuai kebutuhan
+      with_genres: genreId.join(','),
+      sort_by: 'popularity.desc',
     },
   });
 };
