@@ -1,20 +1,5 @@
 {
-    "routes": [
-        {
-            "src": "/",
-            "dest" : "/"
-        },
-        {
-            "src": "/",
-            "dest" : "/all-movies"
-        },
-        {
-            "src": "/",
-            "dest" : "/list-movies"
-        },
-        {
-            "src": "/",
-            "dest" : "/list-tv"
-        }
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
     ]
 }
