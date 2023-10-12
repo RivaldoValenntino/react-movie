@@ -1,11 +1,11 @@
 .search-page {
     height: 100vh;
-    background-image: url('../assets/images/oppenheimer.jpg');
+    background-image: url('../assets/images/oppenheimer.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-top: -30px;
-    /* animation: changeBackground 12s infinite ease-in-out; */
+    animation: changeBackground 12s infinite ease-in-out;
 }
 
 .search-page::after {
@@ -17,24 +17,23 @@
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-/* @keyframes changeBackground {
+@keyframes changeBackground {
 
     0%,
     100% {
-        background-image: url('../assets/images/oppenheimer.jpg');
+        background-image: url('../assets/images/oppenheimer.webp');
     }
 
     25% {
-        background-image: url('../assets/images/john_wick2.png');
+        background-image: url('../assets/images/john_wick2.webp');
         
         }
         
         50% {
-        background-image: url('../assets/images/flash3.jpg');
+        background-image: url('../assets/images/flash3.webp');
     }
 
     75% {
-        background-image: url('../assets/images/blue_beetle.jpg');
+        background-image: url('../assets/images/blue_beetle.webp');
     }
 }
-*/
