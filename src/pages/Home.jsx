@@ -1,6 +1,5 @@
 import Navbar from '../components/navbar'
-import Trending from '../components/cards/trending'
-import Series from '../components/cards/tvseries'
+import Trending from "../components/cards/trending";
 import TopRated from '../components/cards/toprated'
 import Landing from '../components/landingPage'
 import Footer from '../components/footer'

@@ -16,24 +16,3 @@
     position: absolute;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
-
-@keyframes changeBackground {
-
-    0%,
-    100% {
-        background-image: url('../assets/images/oppenheimer.webp');
-    }
-
-    25% {
-        background-image: url('../assets/images/john_wick2.webp');
-        
-        }
-        
-        50% {
-        background-image: url('../assets/images/flash3.webp');
-    }
-
-    75% {
-        background-image: url('../assets/images/blue_beetle.webp');
-    }
-}
