@@ -1,8 +1,7 @@
 import axios from "axios";
 
-const BaseUrl = 'https://api.themoviedb.org/3';
-const apiKey = '286f029f10334a6789fb446150403847';
-
+const BaseUrl = import.meta.env.VITE_API_MOVIE_BASE_URL;
+const apiKey = import.meta.env.VITE_API_MOVIE_API_KEY;
 
 export const fetchTopRatedMovies = () => {
   return axios.get(`${BaseUrl}/movie/top_rated`, {
@@ -30,8 +29,8 @@ export const fetchMoviesByGenres = async (genreId) => {
   return axios.get(`${BaseUrl}/discover/movie`, {
     params: {
       api_key: apiKey,
-      with_genres: genreId.join(','),
-      sort_by: 'popularity.desc',
+      with_genres: genreId.join(","),
+      sort_by: "popularity.desc",
     },
   });
 };
@@ -45,12 +44,15 @@ export const fetchTvMovies = (page) => {
   });
 };
 
-
 export const searchMovies = async (q) => {
-  const search = await axios.get (`${BaseUrl}/search/movie?query=${q}&api_key=${apiKey}`);
+  const search = await axios.get(
+    `${BaseUrl}/search/movie?query=${q}&api_key=${apiKey}`
+  );
   return search.data;
-}
+};
 export const searchTv = async (q) => {
-  const search = await axios.get(`${BaseUrl}/search/tv?query=${q}&api_key=${apiKey}`);
+  const search = await axios.get(
+    `${BaseUrl}/search/tv?query=${q}&api_key=${apiKey}`
+  );
   return search.data;
-}
+};
